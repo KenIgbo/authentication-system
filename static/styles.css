@@ -1,0 +1,199 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: #f3f2f0;
+}
+
+header {
+    padding: 25px 0 25px 0;
+    background: #0a66c2;
+    color: #fff;
+    font-size: 20px;
+}
+
+header h2 {
+    margin: 0;
+    text-align: center;
+}
+
+.form-wrap {
+    width: 20%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    background: #fff;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 1rem;
+}
+
+.form-wrap input {
+    width: 100%;
+    margin-bottom: 15px;
+    height: 2rem;
+}
+
+.form-wrap input:focus {
+    outline: none;
+    background: #f7f5f5fe;
+    border: 1px solid #2a2828;
+    border-radius: 5px;
+}
+
+.form-wrap button {
+    margin-top: 5px;
+    height: 2rem;
+    width: 100%;
+    border-radius: 15px;
+    background: #0a66c2;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+}
+
+.form-wrap p {
+    text-align: center;
+}
+
+.form-wrap a,
+.welcome a {
+    text-decoration: none;
+    color: #0a66c2;
+    font-weight: 600;
+}
+
+.form-wrap a:hover {
+    color: #004182;
+    transition: 0.5s;
+}
+
+.form-wrap button:hover {
+    background: #004182;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.welcome a:hover {
+    color: #de1f1f;
+    transition: 0.5s;
+}
+
+.flash {
+    width: 30%;
+    background: #3e8edf;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 30px auto 0 auto;
+}
+
+.welcome {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.welcome h2 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* /////////////////////////////////////////// M-Queries /////////////////////////////////////// */
+
+@media screen and (max-width: 1280px) {
+    .form-wrap {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .form-wrap {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header h2 {
+        font-size: 1.5rem;
+    }
+
+    label, .form-wrap p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .form-wrap {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .form-wrap {
+        width: 60%;
+        font-size: 0.9rem;
+    }
+
+    .form-wrap button {
+        font-size: 0.9rem;
+    }
+
+    header h2 {
+        font-size: 1.3rem;
+    }
+
+    .flash {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 0.9rem;
+    }
+
+    .welcome h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .form-wrap {
+        width: 70%;
+        font-size: 0.8rem;
+    }
+
+    .form-wrap button {
+        font-size: 0.8rem;
+    }
+
+    .welcome h2 {
+        font-size: 0.9rem;
+    }
+
+    .welcome a {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .form-wrap {
+        width: 80%;
+        font-size: 0.75rem;
+    }
+
+    .form-wrap button {
+        font-size: 0.75rem;
+    }
+
+    header h2 {
+        font-size: 1.1rem;
+    }
+}

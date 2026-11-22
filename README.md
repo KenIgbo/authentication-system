@@ -24,7 +24,6 @@ A user authentication web application built with **Python, Flask, Jinja2, and SQ
 | Werkzeug | Password hashing and verification |
 | HTML | Web page structure |
 | CSS | Web page styling |
-| JavaScript | Client-side functionality |
 
 ## Project Structure
 
